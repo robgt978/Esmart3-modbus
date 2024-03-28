@@ -1,0 +1,65 @@
+modbus:
+  - name: Esmart3
+    type: serial
+    baudrate: 9600
+    bytesize: 8
+    method: rtu
+    parity: N
+    port: /dev/ttyACM0
+    stopbits: 1
+    timeout: 10
+    sensors:
+      - name: FV_Voltage
+        unit_of_measurement: V
+        slave: 1
+        address: 1
+        scale: 0.1
+        offset: 0
+        input_type: holding
+        precision: 1
+        device_class: voltage
+      - name: FV_Voltage_Battery
+        unit_of_measurement: V
+        slave: 1
+        address: 2
+        scale: 0.1
+        offset: 0
+        input_type: holding
+        precision: 1
+        device_class: voltage    
+      - name: FV_Power
+        unit_of_measurement: W
+        slave: 1
+        address: 7
+        scale: 1
+        offset: 0
+        input_type: holding
+        precision: 1
+        device_class: power
+      - name: FV_Current
+        unit_of_measurement: A
+        slave: 1
+        address: 3
+        scale: 0.1
+        offset: 0
+        input_type: holding
+        precision: 1
+        device_class: current
+      - name: FV_Day_Power
+        unit_of_measurement: W
+        slave: 1
+        address: 519
+        scale: 1
+        offset: 0
+        input_type: holding
+        precision: 1
+        device_class: power
+      - name: FV_Temperature
+        unit_of_measurement: °C
+        slave: 1
+        address: 9
+        scale: 1
+        offset: 0
+        input_type: holding
+        precision: 1
+        device_class: temperature
