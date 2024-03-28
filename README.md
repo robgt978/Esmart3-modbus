@@ -1,3 +1,5 @@
+Monitoring Esmart3 Mppt in Home Assistant
+
 copy the file in configuration.yaml
 
 
