@@ -1,3 +1,6 @@
+copy the file in configuration.yaml
+
+
 Use the cable CC-USB-RS485-CC150U with the modified rj45 connection
 
 RJ45
